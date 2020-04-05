@@ -1,0 +1,38 @@
+ <!--
+Copyright (c) 2018 ml5
+
+This software is released under the MIT License.
+https://opensource.org/licenses/MIT
+-->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body onresize="windowResized()">
+  <a href="https://aizoo.com"><img src=images/aizoocom.png height="30px"></a>
+  <h1 class='title'>Object detection demo </h1>
+  <h1 class='title'>Front end and backend are separated.</h1>
+  <h5 class='title' id='tips'> 
+    Warning: some pictures taked by cell phone, need to rotated 90°. However, for simplictiy, this demo will not deal with this problem.
+  <div id="container">
+
+    <img src="images/demo.jpg" id="image" class="center">
+    <div id="text-container">
+      <p id="instruction" class="green-color">
+      <button id="uploader-btn" onClick="clickUploader()">Upload image, or drag an image there.</button>
+
+      <p id="warning" class="result-color"></p>
+      <p class="result-color">
+        The result is:
+      </p>
+      <input name="imgFile" type="file" id="fileUploader" accept="image/*" onChange="handleFiles()">
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
