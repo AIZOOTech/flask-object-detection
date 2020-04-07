@@ -2,6 +2,8 @@
 
 - Frontend and backend are separated, not with common flask template. 
 
+If you are chinese, you can read one Chinese blog about this repo here.
+[几十行代码构建一个前后端分离的目标检测演示网站，代码开源](https://mp.weixin.qq.com/s/MIBNjqfx0yG-Bdq2OaeOuA)
 ![demo page](images/flask-object-detection.png)
 ## Server part
 
