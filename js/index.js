@@ -5,7 +5,24 @@ const dropContainer = document.getElementById('container');
 const warning = document.getElementById('warning');
 const fileInput = document.getElementById('fileUploader');
 
-const URL = "http://localhost:5000/api/"
+// const URL = "http://localhost:5000/api/"
+// const URL = "http://192.168.163.132:5000/api/"
+
+
+function GetUrlPara()
+　　{
+	var protocol = window.location.protocol.toString();
+	// var host =  window.location.host.toString();
+	var host =  document.domain.toString();
+        var port = window.location.port.toString();
+	var url = protocol + '//' + host + ":5000/api/";
+	return url;
+　　}
+
+
+const URL = GetUrlPara()
+// alert(URL);
+
 
 function preventDefaults(e) {
   e.preventDefault()

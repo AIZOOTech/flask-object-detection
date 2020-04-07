@@ -91,3 +91,23 @@ http-server
 You can click the button, or drag one image to the page, then the result will show bellow.
 
 ![页面效果图](images/demo.gif)
+
+## Run by Docker
+
+### Quick Start：
+
+If you have docker installed, you can quickly test demo:
+
+`docker run -p 5000:5000 -p 8000:8000 -d vicwoo/flask-object-detection:1.0`
+
+### Docker Build：
+
+If you want to build your own docker image, you can modify the Dockerfile and execute the command:
+
+`docker build -t flask-object-detection:1.0 .`
+
+`docker run -p 5000:5000 -p 8000:8000 -d flask-object-detection:1.0`
+
+### Demo Results:
+
+![20200407150551](images/20200407150551.jpg)
