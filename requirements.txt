@@ -1,5 +1,5 @@
 flask
-numpy==1.15.0
+numpy==1.22.0
 pillow
 tensorflow==1.12.0
 
